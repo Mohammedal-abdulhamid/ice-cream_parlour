@@ -1,0 +1,28 @@
+ 
+
+ [
+  {
+    "flavour": "Vanilla Bean",
+    "litres": 4.5,
+    "capacity": 5.0,
+    "price_per_litre": 3.2
+  },
+  {
+    "flavour": "Salted Caramel",
+    "litres": 0.8,
+    "capacity": 5.0,
+    "price_per_litre": 4.1
+  },
+  {
+    "flavour": "Pistachio",
+    "litres": 2.4,
+    "capacity": 5.0,
+    "price_per_litre": 5.0
+  },
+  {
+    "flavour": "Mango Sorbet",
+    "litres": 0.2,
+    "capacity": 5.0,
+    "price_per_litre": 3.8
+  }
+]
