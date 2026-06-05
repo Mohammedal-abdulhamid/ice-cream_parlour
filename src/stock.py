@@ -7,9 +7,10 @@ def classify_tub(tub):
   percentage = (exixting_litres / capacity) * 100
   percentage_form = f'{percentage}%'
 
-  if percentage > 70 :
+  if percentage >= 70 :
    modified_tub["status"] = "ok"
-  elif 70 >= percentage > 25:
+  
+  elif 70 > percentage >= 25:
    modified_tub["status"] = "low"
   else:
     modified_tub["status"] = "reorder"

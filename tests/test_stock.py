@@ -95,3 +95,50 @@ def test_classify_tub_has_a_status_reorder():
 
     #ASSERT
     assert  expected_result   ==  result
+#######################################
+
+def test_classify_tub_has_70_percent():
+  # ARRANGE
+    modified_tub = {"flavour": "Vanilla Bean",
+    "litres": 3.5,
+    "capacity": 5.0,
+    "price_per_litre": 3.2,
+    
+    }
+
+
+    expected_result  = {"flavour": "Vanilla Bean",
+    "litres": 3.5,
+    "capacity": 5.0,
+    "price_per_litre": 3.2,
+    "status":"ok"
+    }
+   #ACT
+    result = classify_tub(modified_tub )
+
+    #ASSERT
+    assert  expected_result   ==  result
+
+    ########################################
+
+def test_classify_tub_has_25_percent():
+  # ARRANGE
+    modified_tub = {"flavour": "Vanilla Bean",
+    "litres": 1.25,
+    "capacity": 5.0,
+    "price_per_litre": 3.2,
+    
+    }
+
+
+    expected_result  = {"flavour": "Vanilla Bean",
+    "litres": 1.25,
+    "capacity": 5.0,
+    "price_per_litre": 3.2,
+    "status":"low"
+    }
+   #ACT
+    result = classify_tub(modified_tub )
+
+    #ASSERT
+    assert  expected_result   ==  result
